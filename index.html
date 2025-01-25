@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
     <title>Rave Media</title>
+
+    <!--Open Graph Protocol Metadata-->
+    <meta property="og:title" content="Axel Cabato">
+    <meta property="og:type" content="website">
+    <!--<meta property="og:url" content="pass">-->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="author" content="Axel Cabato">
-
     <!--<meta name="description" content="">-->
     <!--<meta name="keywords" content="">-->
 
@@ -48,11 +53,19 @@
         <!--Newsletter Subscription Form-->
         <form action="">
             <fieldset>
-                <legend>Subscribe to our Monthly Newsletter:</legend>
+                <legend>Subscribe to our Newsletter:</legend>
+                <!--Name-->
                 <label for="full_name">Name:</label><br>
                 <input type="text" id="full_name" name="full_name" placeholder="First & Last Name" value="First & Last Name"><br>
+                <!--Email-->
                 <label for="email">Email:</label><br>
                 <input type="email" id="email" name="email" placeholder="xyz@email.com" value="xyz@email.com"><br>
+                <!--Select-->
+                <label for="select">Select:</label>
+                <select name="select" id="select">
+                    <option value="monthly">Monthly</option>
+                    <option value="bi-weekly">Bi-Weekly</option>
+                </select><br>
                 <input type="submit">
             </fieldset>
         </form>
